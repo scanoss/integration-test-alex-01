@@ -144,3 +144,4 @@ void print_copyrights(component_data_t * comp)
 	free(comp->copyright_text);	
 	comp->copyright_text = aux;
 }
+
