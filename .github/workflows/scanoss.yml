@@ -32,5 +32,5 @@ jobs:
           dependencytrack.url: 'https://dependency-track.scanoss.xyz'
           dependencytrack.projectname: 'alex-test'
           dependencytrack.projectversion: '1.0.0'
-          dependencytrack.apikey: ${{ DT_API_KEY }}
+          dependencytrack.apikey: ${{ secrets.DT_API_KEY }}
 
