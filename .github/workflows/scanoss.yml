@@ -1,0 +1,32 @@
+name: SCANOSS Int Test
+
+on:
+  pull_request:
+  push:
+    branches:
+      - "*"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  checks: write
+  actions: read
+
+jobs:
+  scanoss-code-scan:
+    name: SCANOSS Code Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run SCANOSS Code Scan
+        id: scanoss-code-scan-step
+        uses: scanoss/code-scan-action@feat/dependency-track-policy-check
+        with:
+          policies: undeclared,copyleft,depTrack
+          api.url: https://api.scanoss.com/scan/direct
+          api.key: ${{ secrets.SC_API_KEY }}
+
