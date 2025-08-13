@@ -24,7 +24,7 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@feat/dependency-track-policy-chec
+        uses: scanoss/code-scan-action@feat/dependency-track-policy-check
         with:
           policies: copyleft, undeclared, depTrack
           api.key: ${{ secrets.SC_API_KEY }}
