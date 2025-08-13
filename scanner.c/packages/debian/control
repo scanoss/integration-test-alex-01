@@ -1,0 +1,10 @@
+Package: scanoss-scanner
+Version: %VERSION%
+Depends: libcurl4-openssl-dev
+Section: custom
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 61856
+Maintainer: scanoss.com
+Description: Simple console-based OSS scanner using the free OSSKB (Open Source KB)

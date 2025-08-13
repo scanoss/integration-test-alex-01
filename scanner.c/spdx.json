@@ -1,0 +1,39 @@
+{
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "SCANOSS-SBOM",
+  "creationInfo": {
+    "created": "2024-10-30T14:30:24Z",
+    "creators": [
+      "Tool: SCANOSS-PY: 1.17.2",
+      "Person: agus"
+    ]
+  },
+  "documentNamespace": "https://spdx.org/spdxdocs/scanoss-py-1.17.2-20fa0296ccc5a9e62bfc42dc411165a2",
+  "documentDescribes": [
+    "SPDXRef-4b09cf29b716646340f77dd9aee2098f"
+  ],
+  "hasExtractedLicensingInfos": [],
+  "packages": [
+    {
+      "name": "scanoss.java",
+      "SPDXID": "SPDXRef-4b09cf29b716646340f77dd9aee2098f",
+      "versionInfo": "0.7.1",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "https://github.com/scanoss/scanoss.java",
+      "licenseDeclared": "(MIT AND GPL-2.0-or-later)",
+      "licenseConcluded": "NOASSERTION",
+      "filesAnalyzed": false,
+      "copyrightText": "NOASSERTION",
+      "supplier": "Organization: scanoss",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/scanoss/scanoss.java@0.7.1",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ]
+}
