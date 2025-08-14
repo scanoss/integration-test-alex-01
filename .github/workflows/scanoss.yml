@@ -26,6 +26,7 @@ jobs:
           policies: copyleft, undeclared, dt
           api.key: ${{ secrets.SC_API_KEY }}
           dependencytrack.enabled: true
+          policies.halt_on_failure: true
           dependencytrack.url: 'https://dependency-track.scanoss.xyz'
           dependencytrack.apikey: ${{ secrets.DT_API_KEY }}
 
