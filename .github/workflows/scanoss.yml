@@ -28,8 +28,8 @@ jobs:
         with:
           policies: copyleft, undeclared, dt
           api.key: ${{ secrets.SC_API_KEY }}
-          dependencytrack.enabled: false
-          dependencytrack.url: 'https://dependency-track.scanoss.xyz'
+          dependencytrack.enabled: true
+          dependencytrack.url: 'https://dependency-track.scanos.xyz'
           dependencytrack.projectname: 'alex-test'
           dependencytrack.projectversion: '1.0.0'
           dependencytrack.apikey: ${{ secrets.DT_API_KEY }}
