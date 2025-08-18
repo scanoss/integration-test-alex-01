@@ -2,9 +2,6 @@ name: SCANOSS Int Test
 
 on:
   pull_request:
-  push:
-    branches:
-      - "*"
   workflow_dispatch:
 
 permissions:
