@@ -33,6 +33,5 @@ jobs:
           dependencytrack.projectname: 'alex-test'
           dependencytrack.projectversion: '1.0.0'
           dependencytrack.apikey: ${{ secrets.DT_API_KEY }}
-        env:
-          ACTIONS_STEP_DEBUG: true
+          debug: true
 
