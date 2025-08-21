@@ -25,8 +25,8 @@ jobs:
         with:
           policies: copyleft, undeclared, dt
           api.key: ${{ secrets.SC_API_KEY }}
-          dependencytrack.enabled: false
-          dependencytrack.url: 'https://dependency-track.scanoss.xyz'
-          dependencytrack.projectid: '46c83433-860f-4a18-b3e8-bd5cdd4c609d'
-          dependencytrack.apikey: ${{ secrets.DT_API_KEY }}
+          deptrack.upload: false
+          deptrack.url: 'https://dependency-track.scanoss.xyz'
+          deptrack.projectid: '46c83433-860f-4a18-b3e8-bd5cdd4c609d'
+          deptrack.apikey: ${{ secrets.DT_API_KEY }}
 
