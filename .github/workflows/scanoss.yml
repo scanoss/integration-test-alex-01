@@ -25,6 +25,6 @@ jobs:
         with:
           policies: copyleft, undeclared, dt
           api.key: ${{ secrets.SC_API_KEY }}
-          dependencytrack.enabled: true
-          dependencytrack.apikey: ${{ secrets.DT_API_KEY }}
+          deptrack.upload: true
+          deptrack.apikey: ${{ secrets.DT_API_KEY }}
 
