@@ -25,8 +25,8 @@ jobs:
         with:
           policies: copyleft, undeclared, dt
           api.key: ${{ secrets.SC_API_KEY }}
-          dependencytrack.enabled: true
-          dependencytrack.url: 'htt://dependency-track.scanner.xyz'
-          dependencytrack.projectid: 'abcdefghi'
-          dependencytrack.apikey: '123456789'
+          deptrack.upload: true
+          deptrack.url: 'htt://dependency-track.scanner.xyz'
+          deptrack.projectid: 'abcdefghi'
+          deptrack.apikey: '123456789'
 
