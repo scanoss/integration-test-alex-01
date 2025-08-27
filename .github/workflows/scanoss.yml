@@ -24,12 +24,12 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@feat/dependency-track-policy-check
+        uses: scanoss/code-scan-action@feat/SP-3115_url-sanitisation
         with:
           policies: cpl, und, dt
           api.key: ${{ secrets.SC_API_KEY }}
           dependencytrack.enabled: true
-          dependencytrack.url: 'https://dependency-track.scanoss.xyz'
+          dependencytrack.url: 'https://dependency-track.scanoss.xyz/'
           dependencytrack.projectname: 'alex-test'
           dependencytrack.projectversion: '1.0.0'
           dependencytrack.apikey: ${{ secrets.DT_API_KEY }}
