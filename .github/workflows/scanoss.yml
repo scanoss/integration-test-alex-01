@@ -2,9 +2,6 @@ name: SCANOSS Int Test
 
 on:
   pull_request:
-  push:
-    branches:
-      - "*"
   workflow_dispatch:
 
 permissions:
@@ -28,7 +25,7 @@ jobs:
         with:
           policies: cpl, und, dt
           api.key: ${{ secrets.SC_API_KEY }}
-          deptrack.upload: true
+          deptrack.upload: false
           deptrack.url: 'https://dependency-track.scanoss.xyz/'
           deptrack.projectname: 'alex-test'
           deptrack.projectversion: '1.0.0'
