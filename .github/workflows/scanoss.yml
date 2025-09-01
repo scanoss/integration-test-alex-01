@@ -23,11 +23,10 @@ jobs:
         id: scanoss-code-scan-step
         uses: scanoss/code-scan-action@feat/SP-3145_commit-suggestion
         with:
-          policies: cpl, und, dt
+          policies: cpl, und
           api.key: ${{ secrets.SC_API_KEY }}
-          deptrack.upload: true
+          deptrack.upload: false
           deptrack.url: 'https://dependency-track.scanoss.xyz/'
           deptrack.projectname: 'alex-test'
           deptrack.projectversion: '1.0.0'
           deptrack.apikey: ${{ secrets.DT_API_KEY }}
-
