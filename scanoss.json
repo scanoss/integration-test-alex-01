@@ -4,18 +4,6 @@
     "remove": [
       {
     "purl": "pkg:pypi/requests"
-},
-      {
-        "purl": "pkg:github/scanoss/scanner.c"
-      },
-      {
-        "purl": "pkg:github/scanoss/engine"
-      },
-      {
-        "purl": "pkg:github/scanoss/wfp"
-      },
-      {
-        "purl": "pkg:github/scanoss/minr"
       }
     ]
   }
