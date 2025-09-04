@@ -1,6 +1,6 @@
 {
   "bom": {
-    "include": []
+    "include": [],
     "remove": [
       {
     "purl": "pkg:pypi/requests"
