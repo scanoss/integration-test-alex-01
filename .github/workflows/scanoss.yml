@@ -21,7 +21,7 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@feat/SP-3145_commit-suggestion
+        uses: scanoss/code-scan-action@feat/SP-3145_snippet-annotations
         with:
           policies: cpl, und
           api.key: ${{ secrets.SC_API_KEY }}
