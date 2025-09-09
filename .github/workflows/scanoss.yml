@@ -24,9 +24,8 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@feat/SP-3115_url-sanitisation
+        uses: scanoss/code-scan-action@1
         with:
-          policies: cpl, und, dt
           api.key: ${{ secrets.SC_API_KEY }}
           deptrack.upload: true
           deptrack.url: 'https://dependency-track.scanoss.xyz/'
