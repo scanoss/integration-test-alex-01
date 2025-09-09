@@ -6,7 +6,6 @@
   * //TODO Long description
   * @see https://github.com/scanoss/engine/blob/master/src/copyright.c
   */
-
 #include "copyright.h"
 #include "limits.h"
 #include "parse.h"
