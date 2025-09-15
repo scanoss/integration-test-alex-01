@@ -19,15 +19,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: "0"
           token: ${{ secrets.SC_GH_WRITE_TOKEN }}
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
         uses: scanoss/code-scan-action@feat/SP-3145_commit-suggestion
         with:
-          fetch-depth: "0"
-          token: ${{ secrets.SC_GH_WRITE_TOKEN }}
           policies: cpl, und
           api.key: ${{ secrets.SC_API_KEY }}
           deptrack.upload: false
