@@ -14,10 +14,13 @@ jobs:
   scanoss-code-scan:
     name: SCANOSS Code Scan
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: "0"
+          token: ${{ secrets.SC_GH_WRITE_TOKEN }}
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
@@ -30,3 +33,4 @@ jobs:
           deptrack.projectname: 'alex-test'
           deptrack.projectversion: '1.0.0'
           deptrack.apikey: ${{ secrets.DT_API_KEY }}
+
