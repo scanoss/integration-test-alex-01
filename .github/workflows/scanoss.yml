@@ -26,6 +26,8 @@ jobs:
         id: scanoss-code-scan-step
         uses: scanoss/code-scan-action@feat/SP-3145_commit-suggestion
         with:
+          fetch-depth: "0"
+          token: ${{ secrets.SC_GH_WRITE_TOKEN }}
           policies: cpl, und
           api.key: ${{ secrets.SC_API_KEY }}
           deptrack.upload: false
@@ -33,4 +35,3 @@ jobs:
           deptrack.projectname: 'alex-test'
           deptrack.projectversion: '1.0.0'
           deptrack.apikey: ${{ secrets.DT_API_KEY }}
-
