@@ -2,9 +2,6 @@
   "bom": {
     "include": [
       {
-        "purl": "pkg:github/scanoss/pre-commit-hooks"
-      },
-      {
         "purl": "pkg:github/scanoss/scanner.c"
       }
     ]
