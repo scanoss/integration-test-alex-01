@@ -2,7 +2,16 @@
   "bom": {
     "include": [
       {
-      "purl": "pkg:github/scanoss/pre-commit-hooks"
+        "purl": "pkg:github/scanoss/pre-commit-hooks"
+      },
+      {
+        "purl": "pkg:github/scanoss/scanner.c"
+      },
+      {
+        "purl": "pkg:github/scanoss/engine"
+      },
+      {
+        "purl": "pkg:github/scanoss/wfp"
       }
     ]
   }
