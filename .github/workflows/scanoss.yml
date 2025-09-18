@@ -24,9 +24,8 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@bug/SP-3210_policy-does-not-exist-error
+        uses: scanoss/code-scan-action@v1.2.2
         with:
-          policies: 
           api.key: ${{ secrets.SC_API_KEY }}
           deptrack.upload: true
           deptrack.url: 'https://dependency-track.scanoss.xyz/'
