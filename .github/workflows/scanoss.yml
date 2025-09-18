@@ -23,6 +23,7 @@ jobs:
         id: scanoss-code-scan-step
         uses: scanoss/code-scan-action@feat/annotations
         with:
+          match_annotations: false
           policies: cpl, und
           api.key: ${{ secrets.SC_API_KEY }}
           deptrack.upload: false
