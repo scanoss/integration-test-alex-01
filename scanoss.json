@@ -3,6 +3,9 @@
     "include": [
       {
         "purl": "pkg:github/scanoss/scanner.c"
+      },
+      {
+        "purl": "pkg:github/scanoss/engine"
       }
     ]
   }
