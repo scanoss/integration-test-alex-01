@@ -22,6 +22,7 @@ jobs:
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
         uses: scanoss/code-scan-action@bug/commit-comment-link
+        
         with:
           policies: cpl, und
           api.key: ${{ secrets.SC_API_KEY }}
