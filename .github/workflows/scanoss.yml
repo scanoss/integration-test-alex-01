@@ -21,10 +21,10 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@bug/commit-comment-link
+        uses: scanoss/code-scan-action@bug/incorrect-json-structure
         
         with:
-          policies: cpl, und
+          policies: und
           api.key: ${{ secrets.SC_API_KEY }}
           deptrack.upload: false
           deptrack.url: 'https://dependency-track.scanoss.xyz/'
