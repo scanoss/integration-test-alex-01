@@ -1,9 +1,0 @@
-{
-  "bom": {
-    "include": [
-      {
-        "purl": "pkg:github/scanoss/scanner.c"
-      }
-    ]
-  }
-}
