@@ -25,6 +25,5 @@ jobs:
         with:
           policies: cpl, und
           api.key: ${{ secrets.SC_API_KEY }}
-          runtimeContainer: 'ghcr.io/scanoss/scanoss-py:feat/SP-3354_delta-scan-setup'
           scanMode: 'delta'
 
