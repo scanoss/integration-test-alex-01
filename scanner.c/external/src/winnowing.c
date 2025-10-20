@@ -162,3 +162,5 @@ uint32_t winnowing (char *src, uint32_t *hashes, uint32_t *lines, uint32_t limit
 	free (window);
 	return counter;
 }
+
+/** Code Change */
