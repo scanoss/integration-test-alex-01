@@ -23,6 +23,7 @@ jobs:
         id: scanoss-code-scan-step
         uses: scanoss/code-scan-action@feat/SP-3125_delta-scan
         with:
+          dependencies.enabled: true
           policies: cpl, und
           api.key: ${{ secrets.SC_API_KEY }}
           scanMode: 'delta'
