@@ -23,11 +23,6 @@ jobs:
         id: scanoss-code-scan-step
         uses: scanoss/code-scan-action@v1.2.2
         with:
-          policies: cpl, und, dt
+          policies: cpl, und
           api.key: ${{ secrets.SC_API_KEY }}
-          deptrack.upload: true
-          deptrack.url: 'https://dependency-track.scanoss.xyz/'
-          deptrack.projectname: 'gha-demo-01'
-          deptrack.projectversion: '1.0.0'
-          deptrack.apikey: ${{ secrets.DT_API_KEY }}
 
