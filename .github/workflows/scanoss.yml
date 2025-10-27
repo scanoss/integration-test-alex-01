@@ -21,7 +21,7 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@1
+        uses: scanoss/code-scan-action@v1.3.1
         with:
           policies: cpl, und, dt
           api.key: ${{ secrets.SC_API_KEY }}
