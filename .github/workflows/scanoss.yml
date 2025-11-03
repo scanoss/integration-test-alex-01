@@ -30,4 +30,5 @@ jobs:
           deptrack.projectname: 'gha-demo-02'
           deptrack.projectversion: '1.0.0'
           deptrack.apikey: ${{ secrets.DT_API_KEY }}
+          
 
