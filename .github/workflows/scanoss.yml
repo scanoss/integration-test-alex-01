@@ -21,13 +21,13 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@v1.2.2
+        uses: scanoss/code-scan-action@feat/SP-3754_alternate-scan-root
         with:
           policies: cpl, und, dt
           api.key: ${{ secrets.SC_API_KEY }}
           deptrack.upload: true
           deptrack.url: 'https://dependency-track.scanoss.xyz/'
-          deptrack.projectname: 'gha-demo-01'
+          deptrack.projectname: 'gha-subfolder'
           deptrack.projectversion: '1.0.0'
           deptrack.apikey: ${{ secrets.DT_API_KEY }}
 
