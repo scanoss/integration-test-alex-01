@@ -30,4 +30,4 @@ jobs:
           deptrack.projectname: 'gha-subfolder'
           deptrack.projectversion: '1.0.0'
           deptrack.apikey: ${{ secrets.DT_API_KEY }}
-
+          scanPath: './src'
