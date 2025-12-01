@@ -6,7 +6,7 @@ env:
 on:
   push:
     paths:
-    - '${{ env.FILTERED_PATH }}/**'
+    - 'src/**'
 
 permissions:
   contents: write
