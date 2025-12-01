@@ -1,8 +1,12 @@
 name: SCANOSS Int Test
 
+env:
+  FILTERED_PATH: 'src'
+
 on:
-  pull_request:
-  workflow_dispatch:
+  push:
+    paths:
+    - ${{ env.FILTERED_PATH }}'/**'
 
 permissions:
   contents: write
@@ -30,5 +34,5 @@ jobs:
           deptrack.projectname: 'gha-subfolder'
           deptrack.projectversion: '1.0.0'
           deptrack.apikey: ${{ secrets.DT_API_KEY }}
-          scanPath: './src'
+          scanPath: ${{ env.FILTERED_PATH }}
           settingsFilepath: 'scanoss.json'
