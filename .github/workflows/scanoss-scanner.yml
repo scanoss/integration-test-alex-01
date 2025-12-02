@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - 'scanner.c/**'
+  pull_request:
+    paths:
+      - 'src/**'
 
 
 jobs:
