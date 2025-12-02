@@ -5,6 +5,11 @@ on:
     paths:
       - 'comp1/**'
 
+permissions:
+  contents: write
+  pull-requests: write
+  checks: write
+  actions: read
 
 jobs:
   call-scanoss-workflow:
