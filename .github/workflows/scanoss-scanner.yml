@@ -11,6 +11,6 @@ on:
 
 jobs:
   call-scanoss-workflow:
-    uses: .github/workflows/scanoss.yml
+    uses: ./.github/workflows/scanoss.yml@subfolder-basic
     with:
       FILTERED_PATH: 'scanner.c'
