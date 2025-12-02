@@ -1,12 +1,11 @@
 name: SCANOSS Int Test
 
-env:
-  FILTERED_PATH: 'src'
-
 on:
-  push:
-    paths:
-    - 'src/**'
+  workflow_call:
+    inputs:
+      FILTERED_PATH:
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -16,7 +15,7 @@ permissions:
 
 jobs:
   scanoss-code-scan:
-    name: SCANOSS Code Scan
+    name: SCANOSS Code Scan - ${{ inputs.FILTERED_PATH }}
     runs-on: ubuntu-latest
 
     steps:
@@ -34,5 +33,5 @@ jobs:
           deptrack.projectname: 'gha-subfolder'
           deptrack.projectversion: '1.0.0'
           deptrack.apikey: ${{ secrets.DT_API_KEY }}
-          scanPath: ${{ env.FILTERED_PATH }}
+          scanPath: ${{ inputs.FILTERED_PATH }}
           settingsFilepath: 'scanoss.json'

@@ -1,0 +1,13 @@
+name: Scanoss - SRC
+
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+
+
+jobs:
+  call-scanoss-workflow:
+    uses: .github/workflows/scanoss.yml
+    with:
+       FILTERED_PATH: 'src'
