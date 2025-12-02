@@ -1,9 +1,6 @@
 name: Scanoss - scanner.c
 
 on:
-  push:
-    paths:
-      - 'scanner.c/**'
   pull_request:
     paths:
       - 'scanner.c/**'
