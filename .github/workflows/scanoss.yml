@@ -6,6 +6,11 @@ on:
       FILTERED_PATH:
         required: true
         type: string
+    secrets:
+      SC_API_KEY:
+        required: false
+      DT_API_KEY:
+        required: false
 
 permissions:
   contents: write

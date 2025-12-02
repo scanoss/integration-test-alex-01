@@ -16,3 +16,4 @@ jobs:
     uses: ./.github/workflows/scanoss.yml
     with:
        FILTERED_PATH: 'comp1'
+    secrets: inherit
