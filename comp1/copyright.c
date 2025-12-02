@@ -145,3 +145,7 @@ void print_copyrights(component_data_t * comp)
 	comp->copyright_text = aux;
 }
 
+
+/* Code Change 5 */
+
+

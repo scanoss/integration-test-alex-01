@@ -1,0 +1,13 @@
+name: Scanoss - scanner.c
+
+on:
+  pull_request:
+    paths:
+      - 'scanner.c/**'
+
+jobs:
+  call-scanoss-workflow:
+    uses: ./.github/workflows/scanoss.yml
+    with:
+      FILTERED_PATH: 'scanner.c'
+    secrets: inherit
