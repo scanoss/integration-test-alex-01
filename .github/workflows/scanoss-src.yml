@@ -1,16 +1,16 @@
-name: Scanoss - SRC
+name: Scanoss - comp1
 
 on:
   push:
     paths:
-      - 'src/**'
+      - 'comp1/**'
   pull_request:
     paths:
-      - 'src/**'
+      - 'comp1/**'
 
 
 jobs:
   call-scanoss-workflow:
     uses: ./.github/workflows/scanoss.yml
     with:
-       FILTERED_PATH: 'src'
+       FILTERED_PATH: 'comp1'
