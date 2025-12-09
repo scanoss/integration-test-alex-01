@@ -40,3 +40,4 @@ jobs:
           deptrack.apikey: ${{ secrets.DT_API_KEY }}
           scanPath: ${{ inputs.FILTERED_PATH }}
           settingsFilepath: 'scanoss.json'
+
