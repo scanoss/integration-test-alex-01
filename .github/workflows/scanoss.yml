@@ -1,8 +1,16 @@
 name: SCANOSS Int Test
 
 on:
-  pull_request:
-  workflow_dispatch:
+  workflow_call:
+    inputs:
+      FILTERED_PATH:
+        required: true
+        type: string
+    secrets:
+      SC_API_KEY:
+        required: false
+      DT_API_KEY:
+        required: false
 
 permissions:
   contents: write
@@ -12,7 +20,7 @@ permissions:
 
 jobs:
   scanoss-code-scan:
-    name: SCANOSS Code Scan
+    name: SCANOSS Code Scan - ${{ inputs.FILTERED_PATH }}
     runs-on: ubuntu-latest
 
     steps:
@@ -21,13 +29,15 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@v1.2.2
+        uses: scanoss/code-scan-action@v1.4.0
         with:
           policies: cpl, und, dt
           api.key: ${{ secrets.SC_API_KEY }}
           deptrack.upload: true
           deptrack.url: 'https://dependency-track.scanoss.xyz/'
-          deptrack.projectname: 'gha-demo-01'
+          deptrack.projectname: 'gha-subfolder'
           deptrack.projectversion: '1.0.0'
           deptrack.apikey: ${{ secrets.DT_API_KEY }}
+          scanPath: ${{ inputs.FILTERED_PATH }}
+          settingsFilepath: 'scanoss.json'
 
