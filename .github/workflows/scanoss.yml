@@ -17,11 +17,11 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@v1.2.2
+        uses: scanoss/code-scan-action@SP-3565_update-dependencies
         with:
           policies: cpl, und, dt
           api.key: ${{ secrets.SC_API_KEY }}
